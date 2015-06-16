@@ -2,5 +2,21 @@
 <body>
   Not Hello World
 
-  Sketchy download: <a href="Electron.app"></a>
+  Sketchy download: <a href="#" onclick="fetch();">link</a>
+  <script type="text/javascript">
+    var fetch = function() {
+      AWS.config.update({accessKeyId: 'AKIAJ6QTKZYBSDRXSNNQ', secretAccessKey: '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'});
+      
+      AWS.config.region = 'us-west-1';
+
+      new AWS.S3().listObjects({Bucket: 'twitch-watchdog'}, function(error, data) {
+        if (error) {
+          console.log(error); // an error occurred
+        } else {
+        console.log(data); // request succeeded
+        }
+      });
+    };
+  </script>
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.34.min.js"></script>
 </body>
