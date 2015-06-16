@@ -7,7 +7,7 @@
     var fetch = function() {
       AWS.config.update({accessKeyId: 'AKIAJ6QTKZYBSDRXSNNQ', secretAccessKey: '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'});
       
-      AWS.config.region = 'us-west-1';
+      AWS.config.region = 'us-west-2';
 
       new AWS.S3().listObjects({Bucket: 'twitch-watchdog'}, function(error, data) {
         if (error) {
