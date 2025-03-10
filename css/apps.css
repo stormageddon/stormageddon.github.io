@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    width: 100%;
+}
+
+#apps-content {
+    max-width: 75%;
+    display: inline-block;
+}
+
+div#picShareContent p {
+    padding: 16px;
+    text-align: left;
+    font-size: 1.2em;
+}

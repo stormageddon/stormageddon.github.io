@@ -1,104 +1,228 @@
-
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/bootstrap-3.3.5-dist/css/bootstrap.min.css">
-    <!-- endbuild -->
-  </head>
-  <body>
-    <!--[if lte IE 8]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
 
-    <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
 
-            <a class="navbar-brand" href="#/">watchdog</a>
-          </div>
+<body>
+  <div class="header">
+    <div class="navbar navbar-default" role="navigation">
+      <div class="nav-container">
+        <div class="navbar-header">
 
-          <div class="collapse">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#js-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a href="#/about">About</a></li>
-              <li><a href="#/">Contact</a></li>
-            </ul>
-          </div>
+          <a class="navbar-brand" href="#/">CaputoIO</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="js-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#/">Home</a></li>
+          </ul>
+          <ul class="nav navbar-nav">
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+          </ul>
+          <ul class="nav navbar-nav">
+            <li><a class="nav-link" href="https://mike-makes-games.vercel.app/">Games</a></li>
+          </ul>
+          <ul class="nav navbar-nav">
+            <li><a href="https://www.dropbox.com/s/er93u846zhw01eo/resume_doc_March_15_2016.pdf?dl=1">Resume</a></li>
+          </ul>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="container">
+  <div class="main-content">
+    <div class="wrapper wrapper--imagecover row" id="img-header">
+      <div class="text-center">
+        <h1>Hi! I'm Mike Caputo!</h1>
+        <div class="container" style="display: inline-block;">
+          <div class="row">
+            <div class="col-sm-6">
+              <h2 class="text-end">
+                >
+              </h2>
+            </div>
+            <div class="col-sm-6">
+              <h2 class="typewriter-effect" id="typewriter"></h2>
 
-      <div class="jumbotron">
-	<h1>Welcome to Watchdog!</h1>
-	<p class="lead">
-	  <img src="images/watchdog-icon.png" alt="Welcome to Watchdog!" height="128px" width="128px"><br>
-	  The easiest way to scratch your twitch itch.
-	</p>
-	<p><a style="min-width: 270px;" class="btn btn-lg btn-success" onclick="ga('send', 'event', 'Downloads', 'download', 'Windows')" href="https://twitch-watchdog.s3-us-west-2.amazonaws.com/Watchdog_win_x64.zip" >Download for Windows</a></p>  
-	<p><a style="min-width: 270px;" class="btn btn-lg btn-success" onclick="ga('send', 'event', 'Downloads', 'download', 'Linux')" href="https://twitch-watchdog.s3-us-west-2.amazonaws.com/Watchdog_linux.zip">Download for Linux</a></p>
-	<p><a style="min-width: 270px;" class="btn btn-lg btn-success" onclick="ga('send', 'event', 'Downloads', 'download', 'Mac')" href="https://twitch-watchdog.s3-us-west-2.amazonaws.com/Watchdog-darwin-x64.zip">Download for Mac</a></p>
-	<br>
-	<p>Found a bug or want to contribute? Check out the code on <a href="https://github.com/stormageddon/watchdog">Github</a>!</p>
+            </div>
+
+          </div>
+
+        </div>
       </div>
 
-      <div class="row marketing">
-	<h4>See who's online at a glance</h4>
-	<p>
-	  Watchdog makes it easy to see which of your favorite streamers are online straight from your desktop.
-	</p>
-
-	<h4>Watch streams in your favorite media player</h4>
-	<p>
-	  Using Livestreamer, Watchdog allows you to launch streams straight from the desktop and right into your favorite media player. You can be watching streams seconds after logging in - no browser required!
-	</p>
-
-	<h4>Instant notification</h4>
-	<p>Get notified immediately when new followed streamers begin streaming.</p>
-      </div>      
-      
     </div>
-
-    <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Watchdog Media team</p>
-      </div>
+    <div class="headshot-container text-center row">
+      <img src="img/better_profile.png" class="img-circular" />
     </div>
 
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <div class="about-me text-center">
+      <h3> I am a developer focused on creating high quality software Products and Services across any industry.</h3>
+      <p> Proponent of simplicity. </p>
+      <p> Committed to continuous learning and improvement </p>
+    </div>
 
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-       ga('create', 'UA-65062701-1');
-       ga('send', 'pageview');
-    </script>
+    <div class="tech-stack-container row text-center">
+      <div class="col-sm-12">
+        <h3>Tech Stack</h3>
+      </div>
+      <div class="col-sm-12">
+        <img class="tech-logo" src="img/kotlin.png" width="50em" title="Kotlin" />
+        <img class="tech-logo" src="img/scala-original.svg" width="50em" title="Scala" />
+      </div>
+    </div>
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="scripts/jquery/dist/jquery.js"></script>
-    <script src="styles/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+
+    <section class="projects-section">
+
+
+      <div class="container text-center projects-container" id="projects">
+        <h2>My Projects</h2>
+
+
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="hovereffect">
+              <a href="https://mike-makes-games.vercel.app/" target="_blank">
+                <img alt="Mike Makes Games" src="img/mmg.png" class="img-responsive">
+                <div class="overlay">
+                  <h2>Mike Makes Games</h2>
+                  <p>
+                    <a class="overlay-link">My adventure as a solo indie game developer</a>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="hovereffect icon-box">
+              <a href="http://stormageddon.github.io" target="_blank">
+                <img alt="Compass" src="img/watchdog-icon.png" class="img-responsive">
+                <div class="overlay">
+                  <h2>WatchDog</h2>
+                  <p>
+                    <a class="overlay-link">An electron application that allows users to monitor their favorite
+                      streamers right from the desktop.</a>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="hovereffect icon-box">
+              <a href="picshare.html">
+                <img alt="PicShare" src="img/picshare_logo_lg.png" class="img-responsive">
+                <div class="overlay">
+                  <h2>PicShare</h2>
+                  <p>
+                    <a class="overlay-link">A simple screen capture and sharing utility built for Mac.</a>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="hovereffect icon-box">
+              <a href="https://github.com/stormageddon/steam-buddy" target="_blank">
+                <img alt="SteamBuddy" src="img/Steam_icon_logo.png" class="img-responsive">
+                <div class="overlay">
+                  <h2>Steam Buddy</h2>
+                  <p>
+                    <a class="overlay-link">A slack bot integration that notifies you when your friends have launched a
+                      game via Steam so you can join them.</a>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="hovereffect icon-box">
+              <a href="https://compass.cloudmine.io" target="_blank">
+                <img alt="Compass" src="img/compass_screenshot.png" class="img-responsive">
+                <div class="overlay">
+                  <h2>Compass</h2>
+                  <p>
+                    <a class="overlay-link">Designer, lead developer</a>
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="footer">
+        <div class="container text-center copyright-container">
+          <p class="copyright-notice">&copy; 2025 Michael Caputo. All rights reserved.</p>
+          <p class="cloudmine-notice">Hosted on <a href="http://ramnode.com">RamNode</a></p>
+        </div>
+      </div>
+
+
+      <script>
+        (function (i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-71274600-2', 'auto');
+        ga('send', 'pageview');
+
+      </script>
+
+
+      <!-- build:js(.) scripts/vendor.js -->
+      <!-- bower:js -->
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/stormageddon/TypeWriterJS/typewriter.js"></script>
+      <script>
+        const tw = new TypeWriter('typewriter', { cursor: '_' });
+        tw.typeStr('Developer', { delay: 100 })
+          .wait(1000)
+          .remove(9)
+          .typeStr('Architect', { delay: 100 })
+          .wait(1000)
+          .remove(9)
+          .typeStr('Entrepreneur', { delay: 100 })
+          .wait(1000)
+          .remove(12)
+          .typeStr('Problem Solver', { delay: 100 })
+          .wait(1000)
+          .remove(14)
+          .typeStr('Engineer', { delay: 100 })
+          .wait(1000)
+          .remove(8)
+          .go(true)
+      </script>
+      <!-- endbower -->
+      <!-- endbuild -->
+
 </body>
-</html>
 
+</html>
